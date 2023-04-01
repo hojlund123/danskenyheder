@@ -8,7 +8,11 @@ FEED_URLS = [
     'https://www.dr.dk/nyheder/service/feeds/allenyheder',
     'https://feeds.tv2.dk/nyhederne_seneste/rss',
     'https://www.bt.dk/feed/seneste',
-    'https://ekstrabladet.dk/rssfeed/all/'
+    'https://ekstrabladet.dk/rssfeed/all/',
+    #testet hertil
+    'https://borsen.dk/rss',
+    'https://rss.dst.dk/Site/Rss/feeds/Overskrifter.xml',
+    'https://ing.dk/rss'
 ]
 
 @app.route('/')
