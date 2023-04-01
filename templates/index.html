@@ -11,6 +11,9 @@
 	<ul>
 		{% for article in articles %}
 		<li><a href="/article/{{ loop.index0 }}">{{ article.title }}</a></li>
+		{% if 'media_content' in article %}
+		<img src="{{ article.media_content[0]['url'] }}" alt="{{ article.title }}">
+		{% endif %}
 		{% endfor %}
 	</ul>
 </div>
