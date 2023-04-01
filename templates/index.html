@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dr.dk News</title>
+</head>
+<body>
+	<h1>dr.dk News</h1>
+	<ul>
+		{% for article in articles %}
+		<li><a href="/article/{{ loop.index0 }}">{{ article.title }}</a></li>
+		{% endfor %}
+	</ul>
+</body>
+</html>
