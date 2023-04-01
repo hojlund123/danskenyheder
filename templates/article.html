@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ article.title }}</title>
+</head>
+<body>
+	<h1>{{ article.title }}</h1>
+	<p>{{ article.description }}</p>
+	{% if 'media_content' in article %}
+	<img src="{{ article.media_content[0]['url'] }}" alt="{{ article.title }}">
+	{% endif %}
+</body>
+</html>
