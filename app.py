@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import feedparser
+from urllib.parse import urlparse
 
 app = Flask(__name__)
 
