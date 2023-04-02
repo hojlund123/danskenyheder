@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>dr.dk News</title>
+	<title>Nyheder</title>
 	<!-- Add Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
-	<h1>dr.dk News</h1>
+	<h1>Nyheder</h1>
 	<ul>
 		{% for article in articles %}
 		<li><a href="/article/{{ loop.index0 }}">{{ article.title }}</a></li>
 		{{ article.description }}
 		<p>
-                <text style='color:red;'>{{ article.name }}</text>
+                <a style='color:red;' href='{{ article.link }}'>{{ article.name }}</a>
                 <p>
-                {{ article.link }}
+                
 		{% if 'media_content' in article %}
 		<img src="{{ article.media_content[0]['url'] }}" alt="{{ article.title }}">
 		{% endif %}
