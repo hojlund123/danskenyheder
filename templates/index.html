@@ -14,6 +14,8 @@
 		{{ article.description }}
 		<p>
                 <text style='color:red;'>{{ article.name }}</text>
+                <p>
+                {{ article.link }}
 		{% if 'media_content' in article %}
 		<img src="{{ article.media_content[0]['url'] }}" alt="{{ article.title }}">
 		{% endif %}
